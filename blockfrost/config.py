@@ -5,6 +5,7 @@ except ImportError: # for Python<3.8
     from importlib_metadata import version
 
 class ApiUrls(Enum):
+    localhost = 'http://localhost:3000'
     mainnet = 'https://cardano-mainnet.blockfrost.io/api'
     preprod = 'https://cardano-preprod.blockfrost.io/api'
     preview = 'https://cardano-preview.blockfrost.io/api'
@@ -12,7 +13,7 @@ class ApiUrls(Enum):
     ipfs = 'https://ipfs.blockfrost.io/api'
 
 
-DEFAULT_API_VERSION = 'v0'
+DEFAULT_API_VERSION = ''
 DEFAULT_ORDER = 'asc'
 DEFAULT_PAGINATION_PAGE_COUNT = 1
 DEFAULT_PAGINATION_PAGE_ITEMS_COUNT = 100
